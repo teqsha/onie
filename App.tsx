@@ -1,11 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import MainNavigation from './src/navigation/MainNavigation'
 
 const App = () => {
   return (
-    <View>
-      <Text>App does not work</Text>
-    </View>
+    <MainNavigation/>
   )
 }
 
