@@ -56,7 +56,10 @@ const Signup = () => {
                 onBlur={handleBlur('password')}
                 value={values.password}
                 secureTextEntry={hidePassword}
-                />
+              />
+              {errors.Username && touched.Username && (
+                <Text style={styles.errorText}>{errors.Username}</Text>
+              )}
               <TouchableOpacity
                 style={styles.hidePasswordIcon}
                 onPress={() => setHidePassword(!hidePassword)}>
