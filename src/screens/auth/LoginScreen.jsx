@@ -5,7 +5,7 @@ import { LoginInitialValue, LoginValidationSchema } from './utils';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 // import  {signInWithGoogle}  from '../../SocialLogin';
-// import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux'
 
 const SocialButton = ({ text, iconSource, onPress }) => {
   return (
