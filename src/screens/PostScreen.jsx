@@ -3,6 +3,7 @@ import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 
 const PostScreen = () => {
+  const Stack = createNativeStackNavigator();
    const navigation = useNavigation();
   return (
     <View>

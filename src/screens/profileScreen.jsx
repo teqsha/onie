@@ -4,6 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 // import Profile from './Profile/Profile';
 
 const ProfileScreen = () => {
+  const Stack = createNativeStackNavigator();
   
 
   return (
