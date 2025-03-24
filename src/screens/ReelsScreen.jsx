@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import StackNavigation from './src/navigator/StackNavigation'
 
-const App = () => {
+const ReelsScreen = () => {
+  
   return (
     <View>
-     <StackNavigation/>
+      <Text>ReelsScreen</Text>
     </View>
   )
 }
 
-export default App
+export default ReelsScreen
 
 const styles = StyleSheet.create({})
