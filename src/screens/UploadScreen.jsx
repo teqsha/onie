@@ -5,7 +5,7 @@ import { View, Text, StyleSheet } from 'react-native';
 
 
 const UploadScreen = () => {
-  const Stack = createNativeStackNavigator();
+ 
   return (
     <View>
     <View>

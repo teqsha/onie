@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const ChatScreen = () => {
-  const Stack = createNativeStackNavigator();
+
 
    const navigation = useNavigation();
   return (
