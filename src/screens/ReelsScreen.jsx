@@ -1,12 +1,14 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
 const ReelsScreen = () => {
   return (
     <View>
-      <Text>Reels Screen</Text>
+      <Text>ReelsScreen</Text>
     </View>
-  );
-};
+  )
+}
 
-export default ReelsScreen;
+export default ReelsScreen
+
+const styles = StyleSheet.create({})

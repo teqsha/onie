@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const ChatScreen = () => {
+   const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text style={styles.text}>This is the Chat Screen </Text>
