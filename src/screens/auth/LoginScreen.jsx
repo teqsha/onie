@@ -38,7 +38,7 @@ const navigation = useNavigation();
           <View>
             <TextInput
               style={styles.textinput}
-              placeholder="Email address or Username"
+              placeholder="Username"
               onChangeText={handleChange('Username')}
               onBlur={handleBlur('Username')}
               value={values.Username}
@@ -69,7 +69,7 @@ const navigation = useNavigation();
             {errors.password && touched.password && (
               <Text style={{ color: 'red', paddingLeft: 15 }}>{errors.password}</Text>
             )}
-              <TouchableOpacity onPress={handleSubmit}>
+              <TouchableOpacity onPress={handleSubmit} style={styles.signInText}>    
                 <Text style={styles.signInText}>Login</Text>
               </TouchableOpacity>
             <TouchableOpacity>
@@ -127,9 +127,9 @@ const styles = StyleSheet.create({
     fontSize: 18,
     backgroundColor: '#3797FE',
     width: 350,
-    height: 50,
+    height: 40,
     margin: 10,
-    padding: 10,
+    padding: 1,
     borderRadius: 8,
   },
   forgotPasswordText: {

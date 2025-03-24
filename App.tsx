@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import MainNavigation from './src/navigator/MainNavigation'
+import StackNavigation from './src/navigator/StackNavigation'
 
 const App = () => {
   return (
-    <MainNavigation/>
+    <View>
+     <StackNavigation/>
+    </View>
   )
 }
 

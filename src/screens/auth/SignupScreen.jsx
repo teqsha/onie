@@ -104,7 +104,7 @@ const Signup = () => {
               <Text style={styles.errorText}>{errors.password}</Text>
             )}
 
-            <TouchableOpacity   onPress={() =>{[navigation.navigate('LoginScreen'),{handleSubmit}]}}>
+            <TouchableOpacity   onPress={handleSubmit}>
               <Text style={styles.signInText}>Signup</Text>
             </TouchableOpacity>
             <TouchableOpacity>
