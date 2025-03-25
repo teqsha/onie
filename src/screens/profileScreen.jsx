@@ -1,17 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-// import EditProfile from './Profile/EditProfile';
-// import Profile from './Profile/Profile';
+import EditProfile from './profiles/EditProfile';
+import Profile from './profiles/Profile';
 
 const ProfileScreen = () => {
-
-  
-
   return (
     <View >
-      <View>
-          <Text>ProfileScreen</Text>
-        </View>
+      <Profile/>
+      <EditProfile/>
     </View>
   );
 };
