@@ -24,16 +24,10 @@
 
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-<<<<<<< HEAD
 import { useNavigation } from '@react-navigation/native';
 
 const HomeScreen = () => {
  const Navigation = useNavigation();
-=======
-
-const HomeScreen = () => {
- 
->>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Welcome to the Home Screen!</Text>
@@ -53,8 +47,4 @@ const styles = StyleSheet.create({
   },
 });
 
-<<<<<<< HEAD
 export default HomeScreen;
-=======
-export default HomeScreen;
->>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
