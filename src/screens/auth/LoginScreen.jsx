@@ -17,7 +17,7 @@ const SocialButton = ({ text, iconSource, onPress }) => {
 };
 const LoginScreen = () => {
 const navigation = useNavigation();
-  // const dispatch = useDispatch();;;
+  // const dispatch = useDispatch();;x;
   const [hidePassword, setHidePassword] = useState(true);
 
   const handleLogin = (values) => {
