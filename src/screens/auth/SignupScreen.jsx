@@ -6,7 +6,11 @@ import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 
+<<<<<<< HEAD
 const SignupScreen = () => {
+=======
+const Signup = () => {
+>>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
  const navigation = useNavigation();
   const [hidePassword, setHidePassword] = useState(true);
 
@@ -16,7 +20,11 @@ const SignupScreen = () => {
     console.log('Username:', values.Username);
     console.log('Password:', values.password);
     console.log('Confirm Password:', values.confirmPassword);
+<<<<<<< HEAD
     console.log('Email Address:', values.email);
+=======
+    console.log('Email Address:', values.emailAddress);
+>>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
   };
 
   return (
@@ -57,8 +65,13 @@ const SignupScreen = () => {
                 value={values.password}
                 secureTextEntry={hidePassword}
               />
+<<<<<<< HEAD
               {errors.password && touched.password && (
                 <Text style={styles.errorText}>{errors.password}</Text>
+=======
+              {errors.Username && touched.Username && (
+                <Text style={styles.errorText}>{errors.Username}</Text>
+>>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
               )}
               <TouchableOpacity
                 style={styles.hidePasswordIcon}
@@ -77,8 +90,13 @@ const SignupScreen = () => {
               onBlur={handleBlur('confirm New Password')}
               value={values.confirmPassword}
              />
+<<<<<<< HEAD
             {errors.confirmPassword && touched.confirmPassword && (
               <Text style={styles.errorText}>{errors.confirmPassword}</Text>
+=======
+            {errors.Username && touched.Username && (
+              <Text style={styles.errorText}>{errors.Username}</Text>
+>>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
             )}
             <TouchableOpacity
                 style={styles.hidePasswordIcon}
@@ -96,11 +114,20 @@ const SignupScreen = () => {
                 placeholder="Email Address"
                 onChangeText={handleChange('email Address')}
                 onBlur={handleBlur('email Address')}
+<<<<<<< HEAD
                 value={values.emailaddress}
               />
             </View>
             {errors.email && touched.email && (
               <Text style={styles.errorText}>{errors.email}</Text>
+=======
+                value={values.emailAddress}
+                secureTextEntry={hidePassword}
+              />
+            </View>
+            {errors.password && touched.password && (
+              <Text style={styles.errorText}>{errors.password}</Text>
+>>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
             )}
 
             <TouchableOpacity   onPress={handleSubmit}>
@@ -118,7 +145,10 @@ const SignupScreen = () => {
       <View style={{ flexDirection: 'row', marginTop: 10 }}>
         <Text>have an account? </Text>
         <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
+<<<<<<< HEAD
         {/* <TouchableOpacity > */}
+=======
+>>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
           <Text style={{ color: '#3797FE' }}>Login</Text>
         </TouchableOpacity>
       </View>
@@ -182,6 +212,10 @@ const styles = StyleSheet.create({
 
 });
 
+<<<<<<< HEAD
 export default SignupScreen;
 
 
+=======
+export default Signup;
+>>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279

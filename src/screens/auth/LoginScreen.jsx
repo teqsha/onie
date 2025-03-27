@@ -17,7 +17,11 @@ const SocialButton = ({ text, iconSource, onPress }) => {
 };
 const LoginScreen = () => {
 const navigation = useNavigation();
+<<<<<<< HEAD
   // const dispatch = useDispatch();;x;
+=======
+  // const dispatch = useDispatch();
+>>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
   const [hidePassword, setHidePassword] = useState(true);
 
   const handleLogin = (values) => {
@@ -80,7 +84,10 @@ const navigation = useNavigation();
                 text="Continue with Google"
                 iconSource={require('../../assets/7123025_logo_google_g_icon.png')}
                 // onPress={async () => await dispatch(signInWithGoogle())}
+<<<<<<< HEAD
                 onPress={() => console.log('Google Sign-In pressed')}
+=======
+>>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
               />
               <SocialButton
                 text="Continue with Facebook"
@@ -94,7 +101,10 @@ const navigation = useNavigation();
       <View style={{ flexDirection: 'row',alignItems:'flex-end',justifyContent: 'flex-end', marginTop: 170 }}>
         <Text>Don't have an account? </Text>
         <TouchableOpacity onPress={() => navigation.navigate('SignupScreen')}>
+<<<<<<< HEAD
         {/* <TouchableOpacity > */}
+=======
+>>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
           <Text style={{ color: '#3797FE' }}>Sign up</Text>
         </TouchableOpacity>
       </View>
