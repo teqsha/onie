@@ -4,24 +4,17 @@ import { Formik } from 'formik';
 import { LoginInitialValue, LoginValidationSchema } from './utils';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
-// import  {signInWithGoogle}  from '../../SocialLogin';
-// import { useDispatch } from 'react-redux';
 
 const SocialButton = ({ text, iconSource, onPress }) => {
   return (
     <TouchableOpacity style={styles.socialButton} onPress={onPress}>
-      <Image source={iconSource} style={styles.socialIcon}/>
+      <Image source={iconSource} style={styles.socialIcon} />
       <Text style={styles.ButtonText}>{text}</Text>
     </TouchableOpacity>
   );
 };
 const LoginScreen = () => {
-const navigation = useNavigation();
-<<<<<<< HEAD
-  // const dispatch = useDispatch();;x;
-=======
-  // const dispatch = useDispatch();
->>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
+  const navigation = useNavigation();
   const [hidePassword, setHidePassword] = useState(true);
 
   const handleLogin = (values) => {
@@ -73,38 +66,30 @@ const navigation = useNavigation();
             {errors.password && touched.password && (
               <Text style={{ color: 'red', paddingLeft: 15 }}>{errors.password}</Text>
             )}
-              <TouchableOpacity onPress={handleSubmit} style={styles.signInText}>    
-                <Text style={styles.signInText}>Login</Text>
-              </TouchableOpacity>
+            <TouchableOpacity onPress={handleSubmit} style={styles.signInText}>
+              <Text style={styles.signInText}>Login</Text>
+            </TouchableOpacity>
             <TouchableOpacity>
               <Text style={styles.forgotPasswordText}>Forgot password?</Text>
             </TouchableOpacity>
             <View style={styles.bottomSection}>
-            <SocialButton
+              <SocialButton
                 text="Continue with Google"
                 iconSource={require('../../assets/7123025_logo_google_g_icon.png')}
-                // onPress={async () => await dispatch(signInWithGoogle())}
-<<<<<<< HEAD
                 onPress={() => console.log('Google Sign-In pressed')}
-=======
->>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
               />
               <SocialButton
                 text="Continue with Facebook"
                 iconSource={require('../../assets/facebook.png')}
                 onPress={() => console.log('Facebook Sign-In pressed')}
               />
-               </View>
+            </View>
           </View>
         )}
       </Formik>
-      <View style={{ flexDirection: 'row',alignItems:'flex-end',justifyContent: 'flex-end', marginTop: 170 }}>
+      <View style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'flex-end', marginTop: 170 }}>
         <Text>Don't have an account? </Text>
         <TouchableOpacity onPress={() => navigation.navigate('SignupScreen')}>
-<<<<<<< HEAD
-        {/* <TouchableOpacity > */}
-=======
->>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
           <Text style={{ color: '#3797FE' }}>Sign up</Text>
         </TouchableOpacity>
       </View>
@@ -127,10 +112,10 @@ const styles = StyleSheet.create({
     padding: 10,
     borderWidth: 1,
     borderRadius: 5,
-    color:'black'
+    color: 'black'
   },
-  ButtonText:{
-    color:'black',
+  ButtonText: {
+    color: 'black',
   },
   signInText: {
     color: 'white',
@@ -162,7 +147,7 @@ const styles = StyleSheet.create({
     height: 50,
     margin: 10,
     borderRadius: 8,
-    borderWidth: 1, 
+    borderWidth: 1,
     borderColor: '#ddd',
   },
   socialIcon: {
