@@ -358,7 +358,6 @@ const styles = StyleSheet.create({
   },
 });
 
-<<<<<<< HEAD
 export default Signup;
 
 ..........PostScreen.tsx.........
@@ -686,6 +685,3 @@ const styles = StyleSheet.create({
 export default PostScreen;
 
 
-=======
-export default Signup;
->>>>>>> be2844b5aaaa7b6df4f0e65374fb47c854e41279
