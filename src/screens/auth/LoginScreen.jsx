@@ -4,6 +4,10 @@ import { Formik } from 'formik';
 import { LoginInitialValue, LoginValidationSchema } from './utils';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import  {signInWithGoogle}  from '../redux/SocialLogin';
+import {useAppDispatch} from '../redux/reduxHook';
+
+const dispatch = useAppDispatch();
 
 const SocialButton = ({ text, iconSource, onPress }) => {
   return (
@@ -76,7 +80,7 @@ const LoginScreen = () => {
               <SocialButton
                 text="Continue with Google"
                 iconSource={require('../../assets/7123025_logo_google_g_icon.png')}
-                onPress={() => console.log('Google Sign-In pressed')}
+                onPress={async () => await dispatch(signInWithGoogle())}
               />
               <SocialButton
                 text="Continue with Facebook"

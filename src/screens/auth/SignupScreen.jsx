@@ -102,8 +102,8 @@ const SignupScreen = () => {
                 {errors.email && touched.email && (
                   <Text style={styles.errorText}>{errors.email}</Text>
                 )}
-
-                <TouchableOpacity onPress={handleSubmit}>
+                <TouchableOpacity onPress={() => navigation.navigate('HomeScreen')}>
+                  {/* <TouchableOpacity onPress={handleSubmit}> */}
                   <Text style={styles.signInText}>Signup</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
@@ -182,5 +182,21 @@ const styles = StyleSheet.create({
 });
 
 export default SignupScreen;
+
+
+// import { StyleSheet, Text, View } from 'react-native'
+// import React from 'react'
+
+// const SignupScreen = () => {
+//   return (
+//     <View>
+//       <Text>SignupScreen</Text>
+//     </View>
+//   )
+// }
+
+// export default SignupScreen
+
+// const styles = StyleSheet.create({})
 
 
