@@ -10,7 +10,7 @@ const Welcome = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       navigation.replace('LoginScreen');
-    }, 2000);
+    }, 5000);
      
     return () => clearTimeout(timeout); 
   }, [navigation]);
