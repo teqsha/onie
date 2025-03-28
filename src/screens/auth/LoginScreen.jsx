@@ -5,9 +5,9 @@ import { LoginInitialValue, LoginValidationSchema } from './utils';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import  {signInWithGoogle}  from '../redux/SocialLogin';
-import {useAppDispatch} from '../redux/reduxHook';
+import {useDispatch} from "react-redux";
 
-const dispatch = useAppDispatch();
+
 
 const SocialButton = ({ text, iconSource, onPress }) => {
   return (
@@ -19,6 +19,7 @@ const SocialButton = ({ text, iconSource, onPress }) => {
 };
 const LoginScreen = () => {
   const navigation = useNavigation();
+  const dispatch = useDispatch();
   const [hidePassword, setHidePassword] = useState(true);
 
   const handleLogin = (values) => {
