@@ -30,7 +30,8 @@ GoogleSignin.configure({
   webClientId:
     '464308985903-8d42q6m9f2pu866bcfcrdohnde18nb2n.apps.googleusercontent.com',
   forceCodeForRefreshToken: true,
-  offlineAccess: false,
+  offlineAccess: true,
+  scopes: ["profile", "email"],
   iosClientId:
     '464308985903-i35us58lvjld03loblnt30q30j47a9cl.apps.googleusercontent.com',
 });

@@ -22,7 +22,7 @@ const user = require("./routes/user");
 const replyRouter = require("./routes/reply");
 const shareRouter = require("./routes/share");
 
-app.use("/oauth", authRouter);
+app.use("/api/auth", authRouter);
 app.use("/file", fileRouter);
 app.use("/share", shareRouter);
 app.use("/user", authMiddleware, user);
