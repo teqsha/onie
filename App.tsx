@@ -55,3 +55,20 @@ const App = () => {
 };
 
 export default App;
+
+// import { StyleSheet, Text, View } from 'react-native'
+// import React from 'react'
+// import Apis from './apis';
+
+
+// const App = () => {
+//   return (
+//     <View>
+//       <Apis />
+//     </View>
+//   )
+// }
+
+// export default App
+
+// const styles = StyleSheet.create({})

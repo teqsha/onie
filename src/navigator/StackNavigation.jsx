@@ -32,7 +32,7 @@ const TabNavigation = () => {
             return <MaterialCommunityIcons name={iconName} size={size} color={color} />;
           } else if (route.name === 'Chat') {
             iconName = focused ? 'chatbubble' : 'chatbubble-outline';
-          } else if (route.name === 'Profile') {
+          } else if (route.name === 'ProfileScreen') {
             iconName = focused ? 'person' : 'person-outline';
           }
           return <Ionicons name={iconName} size={size} color={color} />;
@@ -43,7 +43,7 @@ const TabNavigation = () => {
       <Tab.Screen name="Reels" component={ReelsScreen} />
       <Tab.Screen name="Upload" component={UploadScreen} />
       <Tab.Screen name="Chat" component={ChatScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen name="ProfileScreen" component={ProfileScreen} />
     </Tab.Navigator>
   );
 };
